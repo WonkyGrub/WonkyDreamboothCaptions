@@ -16,7 +16,7 @@ class PersonalizedBase(Dataset):
     def __init__(self,
                  data_root,
                  size=None,
-                 repeats=100,
+                 repeats=148,
                  interpolation="bicubic",
                  flip_p=0.5,
                  set="train",
