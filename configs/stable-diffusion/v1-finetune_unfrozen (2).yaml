@@ -85,7 +85,7 @@ data:
         size: 512
         set: train
         per_image_tokens: false
-        repeats: 98
+        repeats: 148
     reg:
       target: ldm.data.personalized.PersonalizedBase
       params:
@@ -93,7 +93,7 @@ data:
         set: train
         reg: true
         per_image_tokens: false
-        repeats: 98
+        repeats: 148
         
     validation:
       target: ldm.data.personalized.PersonalizedBase
@@ -101,7 +101,7 @@ data:
         size: 512
         set: val
         per_image_tokens: false
-        repeats: 98
+        repeats: 148
 
 lightning:
   modelcheckpoint:
@@ -112,7 +112,7 @@ lightning:
       target: main.ImageLogger
       params:
         batch_frequency: 500
-        max_images: 98
+        max_images: 148
         increase_log_steps: False
 
   trainer:
